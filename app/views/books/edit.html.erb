@@ -1,0 +1,18 @@
+<% provide(:title, "edit+ #{@book.title}") %>
+
+<h1>Books</h1>
+
+<%= form_for(@book) do |b| %>
+    <%= b.label :title %>
+    <%= b.text_field :title %> </b>
+
+    <%= b.label :author %>
+    <%= b.text_field :author %> </b>
+
+    <%= b.label :price %>
+    <%= b.text_field :price %> </b>
+
+
+
+    <%= b.submit "Save Changes" %>
+<% end %>
