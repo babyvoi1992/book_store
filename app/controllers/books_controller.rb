@@ -12,7 +12,7 @@ class BooksController < ApplicationController
 
         render "show"
       else
-        render ""
+        render "edit"
       end
   end
 
